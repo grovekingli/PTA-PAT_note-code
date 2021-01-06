@@ -3,3 +3,5 @@
 *.plist
 *.plist
 *.plist
+*.xcworkspacedata
+*.pbxproj
