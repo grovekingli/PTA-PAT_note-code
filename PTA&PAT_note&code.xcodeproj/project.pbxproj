@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFA8EBBE25A5F9AD00AEDB61 /* 1001_A+B_Format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFA8EBBD25A5F9AD00AEDB61 /* 1001_A+B_Format.cpp */; };
+		EFA8EBC325A5FA6C00AEDB61 /* 1002_A+B_for_Polynomials.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFA8EBC125A5FA6C00AEDB61 /* 1002_A+B_for_Polynomials.cpp */; };
 		EFF954B825A5EDA60035A95B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFF954B725A5EDA60035A95B /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EFA8EBB025A5F68A00AEDB61 /* exercise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exercise.h; sourceTree = "<group>"; };
+		EFA8EBBD25A5F9AD00AEDB61 /* 1001_A+B_Format.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1001_A+B_Format.cpp"; sourceTree = "<group>"; };
+		EFA8EBC125A5FA6C00AEDB61 /* 1002_A+B_for_Polynomials.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "1002_A+B_for_Polynomials.cpp"; sourceTree = "<group>"; };
 		EFF954B425A5EDA60035A95B /* PTA&PAT_note&code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PTA&PAT_note&code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF954B725A5EDA60035A95B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFA8EBAD25A5F58100AEDB61 /* basic_struct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = basic_struct;
+			sourceTree = "<group>";
+		};
+		EFA8EBAF25A5F66200AEDB61 /* exercise_list */ = {
+			isa = PBXGroup;
+			children = (
+				EFA8EBB025A5F68A00AEDB61 /* exercise.h */,
+				EFA8EBBD25A5F9AD00AEDB61 /* 1001_A+B_Format.cpp */,
+				EFA8EBC125A5FA6C00AEDB61 /* 1002_A+B_for_Polynomials.cpp */,
+			);
+			path = exercise_list;
+			sourceTree = "<group>";
+		};
 		EFF954AB25A5EDA60035A95B = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +79,8 @@
 		EFF954B625A5EDA60035A95B /* PTA&PAT_note&code */ = {
 			isa = PBXGroup;
 			children = (
+				EFA8EBAF25A5F66200AEDB61 /* exercise_list */,
+				EFA8EBAD25A5F58100AEDB61 /* basic_struct */,
 				EFF954B725A5EDA60035A95B /* main.cpp */,
 			);
 			path = "PTA&PAT_note&code";
@@ -119,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF954B825A5EDA60035A95B /* main.cpp in Sources */,
+				EFA8EBBE25A5F9AD00AEDB61 /* 1001_A+B_Format.cpp in Sources */,
+				EFA8EBC325A5FA6C00AEDB61 /* 1002_A+B_for_Polynomials.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
