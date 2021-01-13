@@ -6,9 +6,10 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "exercise.h"
+#include "basic.h"
 using namespace std;
-
 int main(int argc, const char * argv[]) {
 //    AB_Format();
     return 0;
