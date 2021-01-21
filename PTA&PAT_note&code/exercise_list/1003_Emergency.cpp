@@ -58,10 +58,7 @@ vector<int> dijktraPro(int source, int end, vector<vector<int>> map, vector<int>
                 minDisIndex = i;
             }
         }
-//        if (minDis != dis[minDisIndex] || pathNums[minDisIndex] == 0)
-//        {
-//            pathNums[minDisIndex] = pathNums[minDisIndex] + 1;
-//        }
+        
         // 将筛选出最小距离节点纳入'已收集'数组
         collected[minDisIndex] = 1;
         collectedNum ++ ;
@@ -107,3 +104,51 @@ vector<int> dijktraPro(int source, int end, vector<vector<int>> map, vector<int>
     
     return res;
 }
+/**
+ 配合main 函数使用
+ int main()
+ {
+     vector<vector<int>> cityMap;
+     int cityNum;
+     int pathNum;
+     int start, end;
+     vector<int> cityWeight;
+     
+     cin >> cityNum >> pathNum >> start >> end;
+     if (cityNum == 0)
+     {
+         cout << 0 << " " << 0 <<endl;
+         return 0;
+     }
+     cityMap.resize(cityNum);
+     for (int i = 0; i < cityNum; i++)
+     {
+         int w;
+         cin >> w;
+         cityWeight.push_back(w);
+         cityMap[i].resize(cityNum, INT_MAX);
+     }
+     for (int i = 0; i < pathNum; i++)
+     {
+         int s, e;
+         int l;
+         cin >> s >> e >> l;
+         cityMap[s][e] = l;
+         cityMap[e][s] = l;
+     }
+     
+     vector<int> res;
+     res = dijktraPro(start, end, cityMap, cityWeight, cityNum);
+     for (size_t i = 0; i < res.size(); i++)
+     {
+         cout<< res[i];
+         if (i== res.size() - 1)
+         {
+             cout << endl;
+         }else{
+             cout << " ";
+         }
+     }
+     return 0;
+ }
+ */
