@@ -13,4 +13,6 @@ using namespace std;
 void AB_Format();
 void AB_for_Polynomials();
 vector<int> dijktraPro(int source, int end, vector<vector<int>> map, vector<int> weight,int num);
+void counting_Leaves();
+void Spell_It_Right();
 #endif /* exercise_h */
