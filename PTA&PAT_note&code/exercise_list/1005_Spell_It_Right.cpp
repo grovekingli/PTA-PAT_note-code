@@ -5,7 +5,11 @@
 //  Created by Groveking Li on 2021/1/25.
 //
 
-#include <stdio.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <iomanip>
+#include <vector>
 #include <map>
 using namespace std;
 void Spell_It_Right()
